@@ -24,6 +24,7 @@ h1 {
     border-radius: 0.5rem;
     border: 1px solid white;
     margin-top: 1rem;
+    min-width: 6rem;
 }
 .chuck_joke {
     color: white;

@@ -1,13 +1,14 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
+import logo from './assets/NL-logo.png';
 
 //component imports
 import { getNasaData } from './components/nasa';
 import Clock from './components/time';
 import LiveDate from './components/date';
-import ChuckNorrisJoke from './components/joke';
-import DadJoke from './components/dadJoke';
+/* import ChuckNorrisJoke from './components/joke';
+import DadJoke from './components/dadJoke'; */
 
 function App() {
 	const [nasaData, setNasaData] = useState({});
@@ -31,11 +32,18 @@ function App() {
 			<Main>
 				<div className='time_container'>
 					<Clock />
-					<h1>Norwegian lab</h1>
+					<img
+						className=''
+						height={60}
+						width={300}
+						src={logo}
+						alt='Norwegian Lab Logo'
+					/>
 					<LiveDate />
+					<div></div>
 				</div>
-				<ChuckNorrisJoke />
-				<DadJoke />
+				{/* <ChuckNorrisJoke />
+				<DadJoke /> */}
 			</Main>
 		</>
 	);
