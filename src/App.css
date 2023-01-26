@@ -1,0 +1,43 @@
+h1 {
+    color: white;
+    margin: auto;
+    font-size: 1.8rem;
+
+}
+
+.date_landing {
+    color: white;
+    margin: auto;
+    font-size: 1.5rem;
+    background-color: rgb(52, 51, 51);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid white;
+    margin-top: 1rem;
+}
+.clock_container {
+    color: white;
+    margin: auto;
+    font-size: 1.5rem;
+    background-color: rgb(52, 51, 51);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid white;
+    margin-top: 1rem;
+}
+.chuck_joke {
+    color: white;
+    margin: auto;
+    font-size: 2rem;
+}
+.dad_joke {
+    color: white;
+    margin: auto;
+    font-size: 2rem;
+}
+.time_container {
+width: 100%;
+height: fit-content;
+display: flex;
+justify-content: center;
+}
