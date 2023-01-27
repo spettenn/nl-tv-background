@@ -7,6 +7,7 @@ import logo from './assets/NL-logo.png';
 import { getNasaData } from './components/nasa';
 import Clock from './components/time';
 import LiveDate from './components/date';
+import Weather from './components/weather';
 /* import ChuckNorrisJoke from './components/joke';
 import DadJoke from './components/dadJoke'; */
 
@@ -24,14 +25,12 @@ function App() {
 		height: 100vh;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		padding: 1rem;
 	`;
-
 	return (
 		<>
 			<Main>
 				<div className='time_container'>
-					<Clock />
 					<img
 						className=''
 						height={60}
@@ -39,8 +38,14 @@ function App() {
 						src={logo}
 						alt='Norwegian Lab Logo'
 					/>
-					<LiveDate />
-					<div></div>
+					<div className='wrapper'>
+						<Clock />
+					</div>
+					<div className='wrapper'>
+						<LiveDate />
+					</div>
+
+					<Weather />
 				</div>
 				{/* <ChuckNorrisJoke />
 				<DadJoke /> */}
