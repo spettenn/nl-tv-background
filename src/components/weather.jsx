@@ -21,10 +21,10 @@ function Weather() {
 				setWeatherData(result.data);
 
 				console.log(result.data.weather[0].main.toLowerCase());
-				const iconCode = result.data.weather[0].icon;
+				/* const iconCode = result.data.weather[0].icon;
 				document.querySelector(
 					'#weather-icon'
-				).innerHTML = `<img src="https://openweathermap.org/img/wn/${iconCode}@2x.png" alt="Weather icon">`;
+				).innerHTML = `<img src="https://openweathermap.org/img/wn/${iconCode}@2x.png" alt="Weather icon">`; */
 			} catch (error) {
 				setError(error);
 			}

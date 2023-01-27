@@ -8,8 +8,8 @@ import { getNasaData } from './components/nasa';
 import Clock from './components/time';
 import LiveDate from './components/date';
 import Weather from './components/weather';
-/* import ChuckNorrisJoke from './components/joke';
-import DadJoke from './components/dadJoke'; */
+import ChuckNorrisJoke from './components/joke';
+import DadJoke from './components/dadJoke';
 
 function App() {
 	const [nasaData, setNasaData] = useState({});
@@ -47,8 +47,8 @@ function App() {
 
 					<Weather />
 				</div>
-				{/* <ChuckNorrisJoke />
-				<DadJoke /> */}
+				<ChuckNorrisJoke />
+				<DadJoke />
 			</Main>
 		</>
 	);
